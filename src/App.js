@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Header from './Header';
+import RSP from './game/RSP';
+import ResponseCheck from './game/ResponseCheck';
+import TicTacToe from './game/TicTacToe/TicTacToe';
+import NumberBaseball from './game/NumberBaseball/NumberBaseball';
+import MineSweeper from './game/MineSweeper/MineSweeper'; 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Header />
+        <Routes>
+            <Route path='/rsp' element={<RSP/>}/>
+            <Route path='/res_check' element={<ResponseCheck/>}/>
+            <Route path='/tictactoe' element={<TicTacToe/>}/>
+            <Route path='/find_mine' element={<MineSweeper/>}/>
+            <Route path='/num_baseball' element={<NumberBaseball />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
+      
   );
 }
 

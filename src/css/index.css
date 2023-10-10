@@ -1,0 +1,176 @@
+  @import "reset.css";
+/* --------------------Main--------------------- */
+body, .App, .home{
+  width: 100%;
+  height: 100vh;
+}
+.header{
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+.game_all{
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.theme{
+  text-align: center;
+  font-size: 3rem;
+  margin: 3rem 0; 
+  height: 20%;
+}
+.game{
+  margin: 0 3rem;
+  text-decoration: none;
+  color: #504099;
+}
+.game:hover{
+  scale: 1.2;
+  transition: .1s;
+  color: #313866;
+}
+button{
+  width: 5rem;
+  height: 2rem;
+  margin: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: #F0B86E;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 3px 3px 5px gray;
+}
+/* ----------------Component------------------ */
+.rsp,
+.numberBaseball_home,
+.response_home,
+.tictactoe_home,
+.mineSweeper_home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+/* --------------- RSP ------------------------ */
+  #computer{
+    width: 142px;
+    height: 200px;
+    background-position: 0 0;
+  }
+  .btn{
+    width: 5rem;
+    height: 2rem;
+    margin: 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: #F0B86E;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 3px 3px 5px gray;
+  }
+  .rsp{
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+/* -------------ResponseCheck --------------- */
+  #screen{
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+  }
+  #screen.waiting{
+    background-color: aqua;
+  }
+  #screen.ready{
+    background-color: red;
+    color: white;
+  }
+  #screen.now{
+    background-color: greenyellow;
+  }
+.response_home{
+  font-size: 1.4rem;
+}
+.res_time{
+  margin-bottom: 0.5rem;
+}
+.average_time{
+  margin-bottom: 0.5rem;
+}
+
+/* ---------------TicTacToe------------- */
+table{
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.TTT_Table td {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+td{
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: 600;
+}
+.tictactoeResult{
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.baseball_table{
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  border-collapse: collapse;
+}
+.baseball_table>tr :nth-child(1) {
+  background-color: #FFF3DA;
+}
+.baseball_table>tr :nth-child(2){
+  background-color: #DFCCFB;
+}
+.baseball_table>tr :nth-child(3) {
+  background-color: #D0BFFF;
+}
+.baseball_table>tr :nth-child(4) {
+  background-color: #BEADFA;
+}
+.tryInfo{
+  margin-top: 2rem;
+}
+.tryInfo_try{
+  margin-bottom: 8px;
+}
+.tryInfo_try_num{
+  font-weight: 600;
+}
+.baseball_result{
+  margin-bottom: 1rem;
+}
